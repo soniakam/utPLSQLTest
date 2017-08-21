@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" ?><testsuite errors="0" skipped="0" tests="4" time="0" failures="0" name="All-2">   <testcase classname="BETWNSTR" time="0" name="UT_BETWNSTR" ></testcase>
+   <testcase classname="BETWNSTR" time="0" name="UT_BETWNSTR" ></testcase>
+   <testcase classname="BETWNSTR" time="0" name="UT_BETWNSTR" ></testcase>
+   <testcase classname="BETWNSTR" time="0" name="UT_BETWNSTR" ></testcase>
+</testsuite>

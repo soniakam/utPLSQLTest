@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?><testsuite errors="0" skipped="0" tests="12" time="0" failures="0" name="All-1">   <testcase classname="MYBOOKS_PKG" time="0" name="UT_6_DEL" ></testcase>
+   <testcase classname="MYBOOKS_PKG" time="0" name="UT_5_UPD" ></testcase>
+   <testcase classname="MYBOOKS_PKG" time="0" name="UT_4_SEL_BOOKNM" ></testcase>
+   <testcase classname="MYBOOKS_PKG" time="0" name="UT_3_SEL_BOOK_PROC" ></testcase>
+   <testcase classname="MYBOOKS_PKG" time="0" name="UT_3_SEL_BOOK_PROC" ></testcase>
+   <testcase classname="MYBOOKS_PKG" time="0" name="UT_2_SEL_BOOK_FUNC" ></testcase>
+   <testcase classname="MYBOOKS_PKG" time="0" name="UT_2_SEL_BOOK_FUNC" ></testcase>
+   <testcase classname="MYBOOKS_PKG" time="0" name="UT_1_INS" ></testcase>
+   <testcase classname="MYBOOKS_PKG" time="0" name="UT_1_INS" ></testcase>
+   <testcase classname="MYBOOKS_PKG" time="0" name="UT_1_INS" ></testcase>
+   <testcase classname="MYBOOKS_PKG" time="0" name="UT_1_INS" ></testcase>
+   <testcase classname="MYBOOKS_PKG" time="0" name="UT_1_INS" ></testcase>
+</testsuite>
