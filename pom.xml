@@ -26,7 +26,7 @@
           <!-- specify the dependent jdbc driver here -->
             <dependency>
                 <groupId>com.oracle</groupId>
-                <artifactId>ojdbc6</artifactId>
+                <artifactId>ojdbc14</artifactId>
                 <version>9.0.2.0.0</version>
             </dependency>
         </dependencies>
