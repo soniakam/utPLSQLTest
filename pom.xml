@@ -68,9 +68,9 @@
 
           <url>jdbc:oracle:thin:@localhost:1521:xe</url>
 
-          <username>tdd_test1</username>
+          <username>testing</username>
 
-          <password>tdd_test1</password>
+          <password>testing</password>
 
           <!--<packageName>betwnstr</packageName>-->
 
