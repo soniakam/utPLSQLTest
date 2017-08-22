@@ -27,7 +27,7 @@
             <dependency>
                 <groupId>com.oracle</groupId>
                 <artifactId>ojdbc6</artifactId>
-                <version>11.2.0</version>
+                <version>9.0.2.0.0</version>
             </dependency>
         </dependencies>
 
@@ -130,16 +130,13 @@
       <plugin>
         <groupId>com.theserverlabs.maven.utplsql</groupId>
         <artifactId>maven-utplsql-plugin</artifactId>
-	      
         <version>1.1-SNAPSHOT</version>
-
-      
 
         <dependencies>
             <dependency>
                 <groupId>com.oracle</groupId>
-                <artifactId>ojdbc6</artifactId>
-                <version>11.2.0</version>
+                <artifactId>ojdbc14</artifactId>
+                <version>9.0.2.0.0</version>
             </dependency>
         </dependencies>
 
