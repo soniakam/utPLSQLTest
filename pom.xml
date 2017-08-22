@@ -1,111 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
--<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
-<modelVersion>4.0.0</modelVersion>
+  <modelVersion>4.0.0</modelVersion>
 
-<groupId>com.tsl.plsqltest</groupId>
+  <groupId>com.tsl.plsqltest</groupId>
 
-<artifactId>plsqltest</artifactId>
+  <artifactId>plsqltest</artifactId>
 
-<packaging>jar</packaging>
+  <packaging>jar</packaging>
 
-<version>1.0-SNAPSHOT</version>
+  <version>1.0-SNAPSHOT</version>
 
-<name>PL SQL test project</name>
+  <name>PL SQL test project</name>
+
+ 
+
+  <dependencies>
+
+    <dependency>
+
+      <groupId>junit</groupId>
+
+      <artifactId>junit</artifactId>
+
+      <version>3.8.2</version>
+
+      <scope>test</scope>
+
+    </dependency>
+
+  </dependencies>
+
+  <build>
+
+    <plugins>
+
+      <plugin>
+
+        <groupId>com.theserverlabs.maven.utplsql</groupId>
+
+        <artifactId>maven-utplsql-plugin</artifactId>
+
+        <version>1.0-SNAPSHOT</version>
+
+ 
+
+        <dependencies>
+
+          <dependency>
+
+            <groupId>com.oracle</groupId>
+
+            <artifactId>ojdbc6</artifactId>
+
+            <version>11.0.2.0.0</version>
+
+         </dependency>
+
+        </dependencies>
+
+ 
+
+        <configuration>
+
+          <driver>oracle.jdbc.driver.OracleDriver</driver>
+
+          <url>jdbc:oracle:thin:@localhost:1521:xe</url>
+
+          <username>system</username>
+
+          <password>system</password>
+
+          <!--<packageName>betwnstr</packageName>-->
+
+          <testSuiteName>ALL</testSuiteName>
+
+        </configuration>
+
+        <executions>
+
+          <execution>
+
+            <id>run-plsql-test-packages</id>
+
+            <phase>process-test-resources</phase>
+
+            <goals>
+
+              <goal>execute</goal>
+
+            </goals>
+
+          </execution>
+
+        </executions>
+
+      </plugin>
+
+ 
+    </plugins>
 
 
--<dependencies>
-
-
--<dependency>
-
-<groupId>junit</groupId>
-
-<artifactId>junit</artifactId>
-
-<version>3.8.2</version>
-
-<scope>test</scope>
-
-</dependency>
-
-</dependencies>
-
-
--<build>
-
-
--<plugins>
-
-
--<plugin>
-
-<groupId>com.theserverlabs.maven.utplsql</groupId>
-
-<artifactId>maven-utplsql-plugin</artifactId>
-
-<version>1.0-SNAPSHOT</version>
-
-
--<dependencies>
-
-
--<dependency>
-
-<groupId>com.oracle</groupId>
-
-<artifactId>ojdbc14</artifactId>
-
-<version>9.0.2.0.0</version>
-
-</dependency>
-
-</dependencies>
-
-
--<configuration>
-
-<driver>oracle.jdbc.driver.OracleDriver</driver>
-
-<url>jdbc:oracle:thin:@localhost:1521:xe</url>
-
-<username>system</username>
-
-<password>system</password>
-
-<!--<packageName>betwnstr</packageName>-->
-
-
-<testSuiteName>ALL</testSuiteName>
-
-</configuration>
-
-
--<executions>
-
-
--<execution>
-
-<id>run-plsql-test-packages</id>
-
-<phase>process-test-resources</phase>
-
-
--<goals>
-
-<goal>execute</goal>
-
-</goals>
-
-</execution>
-
-</executions>
-
-</plugin>
-
-</plugins>
-
-</build>
+  </build>
 
 </project>
