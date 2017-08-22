@@ -50,7 +50,7 @@
 
           <dependency>
 
-            <groupId>com.oracle.ojdbc14.10.2.0.4.0</groupId>
+            <groupId>com.oracle</groupId>
 
             <artifactId>ojdbc14</artifactId>
 
