@@ -130,7 +130,7 @@
       <plugin>
         <groupId>com.theserverlabs.maven.utplsql</groupId>
         <artifactId>maven-utplsql-plugin</artifactId>
-        <version>1.0-SNAPSHOT</version>
+      
 
         <dependencies>
             <dependency>
